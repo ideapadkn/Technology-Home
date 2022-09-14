@@ -13,6 +13,9 @@
     .header .tags .tags__inner .tags__item {
         padding: 30px;
     }
+    .tags .tag__item {
+        height: 363px;
+    }
 }
 @media screen and (max-width: 991px) {
     .container {
@@ -41,6 +44,13 @@
     }
     .footer .tags {
         gap: 0 30px;
+    }
+    .tags {
+        flex-wrap: wrap;
+    }
+    .tags .tag__item {
+        margin-bottom: 30px;
+        height: auto;
     }
 }
 @media screen and (max-width: 767px) {

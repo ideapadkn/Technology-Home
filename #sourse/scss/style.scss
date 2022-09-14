@@ -159,9 +159,6 @@ $white: #FFFFFF;
         .about__right {
             flex: 0 1 575px;
         }
-        .about__left {
-            
-        }
         .title {
             width: 454px;
             font-weight: 500;
@@ -235,6 +232,9 @@ $white: #FFFFFF;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        img {
+            margin: 0 20px;
+        }
     }
 }
 
