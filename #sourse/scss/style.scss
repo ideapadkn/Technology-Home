@@ -16,6 +16,7 @@ $white: #FFFFFF;
     background-color: $blue;
     &:hover {
         background-color: #023b86;
+        transform: translate(10px, 0);
     }
 }
 
@@ -35,6 +36,29 @@ $white: #FFFFFF;
     line-height: 26px; // 162%
     color: #868686;
 }
+
+.header .navbar .nav .show-menu {
+    display: inline-block;
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 80%;
+    padding: 25%;
+    li {
+        margin: 15px 0;
+    }
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+
 
 .header {
     background-image: url(../../images/header-bg.png);
@@ -104,27 +128,6 @@ $white: #FFFFFF;
             color: #000;
         }
     }
-}
-
-.header .navbar .nav .show-menu {
-    display: inline-block;
-    position: absolute;
-    background-color: #000;
-    left: 0;
-    top: 0;
-    width: 80%;
-    height: 80%;
-    padding: 25%;
-    li {
-        margin: 15px 0;
-    }
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
-    background: none;
-    border: none;
 }
 
 .section1 {
@@ -321,6 +324,7 @@ $white: #FFFFFF;
         } 
         .btn {
             @extend %btn;
+            transition: all .3;
             margin-top: 30px;
         }
     }
